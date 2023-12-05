@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react'
 import { Navigation } from './navigation'
 import { cn } from '@/lib/utils';
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+import { prefix } from '@/prefix';
 
 
 type Props = {}
@@ -31,7 +32,7 @@ const Header = (props: Props) => {
             <div className='max-w-contentContainer px-6 lg:px-0 m-auto h-full flex justify-between items-center'>
                 <div className='flex space-x-2 items-center'>
                     <Image
-                        src="/logo.svg"
+                        src={`${prefix}/logo.svg`}
                         alt="Logo"
                         height={24}
                         width={24}
