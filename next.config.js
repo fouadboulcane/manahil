@@ -3,7 +3,7 @@
 const isProd = process.env.NODE_NEV === 'production';
 
 const nextConfig = {
-    basePath: isProd ? '/manahil' : '',
+    basePath: '/manahil',
     output: "export",
     distDir: "dist",
     images: {
