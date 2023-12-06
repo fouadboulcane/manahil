@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { prefix } from '@/prefix'
 import Image from 'next/image'
 import React from 'react'
 
@@ -17,7 +18,7 @@ const CallActions = (props: Props) => {
           </div>
           <div className='lg:w-1/2 flex justify-end'>
             <Image 
-              src="/tech.webp"
+              src={`${prefix}/tech.webp`}
               alt="tech"
               width={500}
               height={392}
@@ -27,7 +28,7 @@ const CallActions = (props: Props) => {
         <div className='max-w-contentContainer px-6 lg:px-0 m-auto flex flex-col lg:flex-row w-full'>
           <div className='lg:w-1/2'>
             <Image 
-              src="/tech2.webp"
+              src={`${prefix}/tech2.webp`}
               alt="tech2"
               width={1041}
               height={963}

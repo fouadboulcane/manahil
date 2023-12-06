@@ -1,3 +1,4 @@
+import { prefix } from '@/prefix'
 import Image from 'next/image'
 import React from 'react'
 
@@ -9,7 +10,7 @@ const Infos = (props: Props) => {
         <div className='max-w-contentContainer px-6 lg:py-0 m-auto grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-8'>
             <div className='col-span-1 flex flex-col space-y-4'>
                 <Image 
-                    src="/fingerprint.svg"
+                    src={`${prefix}/fingerprint.svg`}
                     alt="infos"
                     width={80}
                     height={80}
@@ -19,7 +20,7 @@ const Infos = (props: Props) => {
             </div>
             <div className='col-span-1 flex flex-col space-y-2'>
                 <Image 
-                    src="/headphone.svg"
+                    src={`${prefix}/headphone.svg`}
                     alt="infos"
                     width={80}
                     height={80}
@@ -29,7 +30,7 @@ const Infos = (props: Props) => {
             </div>
             <div className='col-span-1 flex flex-col space-y-2'>
                 <Image 
-                    src="/shield.svg"
+                    src={`${prefix}/shield.svg`}
                     alt="infos"
                     width={80}
                     height={80}

@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="shortcut icon" href="/logo.svg" />
+        <base href="/manahil/"></base>
       </head>
       <body className={inter.className}>{children}</body>
     </html>

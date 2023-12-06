@@ -1,3 +1,4 @@
+import { prefix } from '@/prefix';
 import Image from 'next/image'
 import React from 'react'
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -13,7 +14,7 @@ const FeaturedResources = (props: Props) => {
                 {[0,1,2].map((post, i) => (
                     <div key={i} className='group shadow-lg flex flex-col rounded-xl overflow-hidden'>
                         <Image
-                            src="/post_pvh.webp"
+                            src={`${prefix}/post_pvh.webp`}
                             alt="sdfs"
                             width={200}
                             height={120}

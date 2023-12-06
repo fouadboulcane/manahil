@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { prefix } from '@/prefix'
 import Image from 'next/image'
 import React from 'react'
 
@@ -17,7 +18,7 @@ const Hero = (props: Props) => {
             </div>
             <div className='w-1/2'>
               <Image 
-                src='/shape.webp'
+                src={`${prefix}/shape.webp`}
                 alt="shape"
                 width={1700}
                 height={1500}

@@ -1,3 +1,4 @@
+import { prefix } from '@/prefix';
 import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
@@ -15,7 +16,7 @@ const Footer = (props: Props) => {
                 <div className='col-span-1 flex flex-col space-y-4'>
                     <div className='flex space-x-2 items-center'>
                         <Image
-                            src="/logo.svg"
+                            src={`${prefix}/logo.svg`}
                             alt="Logo"
                             height={24}
                             width={24}
@@ -29,13 +30,13 @@ const Footer = (props: Props) => {
                     </p>
                     <div className='flex space-x-4'>
                         <Image
-                            src="/appstore.svg"
+                            src={`${prefix}/appstore.svg`}
                             alt="applestore"
                             width={100}
                             height={70}
                         />
                         <Image
-                            src="/googleplay.svg"
+                            src={`${prefix}/googleplay.svg`}
                             alt="googleplay"
                             width={110}
                             height={80}

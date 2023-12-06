@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { prefix } from '@/prefix'
 import Image from 'next/image'
 import React from 'react'
 
@@ -17,14 +18,14 @@ const GetStarted = (props: Props) => {
             </div>
 
             <Image 
-                src="/lattice.svg"
+                src={`${prefix}/lattice.svg`}
                 alt="lattice"
                 width={460}
                 height={460}
                 className='absolute left-0 -bottom-20'
             />
             <Image 
-                src="/lattice_right.svg"
+                src={`${prefix}/lattice_right.svg`}
                 alt="lattice"
                 width={520}
                 height={460}

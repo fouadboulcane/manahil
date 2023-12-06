@@ -1,6 +1,7 @@
 import React from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import Image from 'next/image'
+import { prefix } from '@/prefix'
 
 type Props = {}
 
@@ -16,7 +17,7 @@ const Services = (props: Props) => {
                 <div className="w-full lg:w-3/5 flex-shrink-0">
                   <TabsContent value="digital_creds">
                       <Image 
-                        src='/digital_creds.webp'
+                        src={`${prefix}/digital_creds.webp`}
                         alt='Digital Credentials'
                         width={600}
                         height={600}
@@ -24,7 +25,7 @@ const Services = (props: Props) => {
                   </TabsContent>
                   <TabsContent value="workforce_insights">
                     <Image 
-                        src='/workforce_insights.webp'
+                        src={`${prefix}/workforce_insights.webp`}
                         alt='Workforce Insights'
                         width={600}
                         height={600}
@@ -32,7 +33,7 @@ const Services = (props: Props) => {
                   </TabsContent>
                   <TabsContent value="workforce_planning">
                     <Image 
-                        src='/workforce_planning.webp'
+                        src={`${prefix}/workforce_planning.webp`}
                         alt='Workforce Planning'
                         width={600}
                         height={600}
@@ -40,7 +41,7 @@ const Services = (props: Props) => {
                   </TabsContent>
                   <TabsContent value="recruiting">
                     <Image 
-                        src='/recruiting.webp'
+                        src={`${prefix}/recruiting.webp`}
                         alt='Recruiting'
                         width={600}
                         height={600}
