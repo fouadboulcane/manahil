@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { prefix } from '@/prefix'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Manahil</title>
-        <link rel="shortcut icon" href="/logo.svg" />
+        <link rel="shortcut icon" href={`${prefix}/logo.svg`} />
         <base href="/manahil/"></base>
       </head>
       <body className={inter.className}>{children}</body>
