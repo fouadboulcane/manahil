@@ -1,3 +1,4 @@
+import { prefix } from '@/prefix';
 import Image from 'next/image'
 import React from 'react'
 import { ImQuotesLeft } from "react-icons/im";
@@ -9,7 +10,7 @@ const Testimonial = (props: Props) => {
     <section className='py-20 relative'>
         <div className='absolute top-0'>
             <Image 
-                src='/dots.webp'
+                src={`${prefix}/dots.webp`}
                 alt='dots'
                 width={250}
                 height={250}
@@ -23,7 +24,7 @@ const Testimonial = (props: Props) => {
                 <div className="flex flex-col lg:flex-row items-center justify-center space-x-8 divide-x divide-neutral-700">
                     <div>
                         <Image 
-                            src="/forgerock.webp"
+                            src={`${prefix}/forgerock.webp`}
                             alt="forgerock"
                             width={160}
                             height={80}
