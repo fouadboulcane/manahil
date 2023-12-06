@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>Manahil</title>
         <link rel="shortcut icon" href="/logo.svg" />
         <base href="/manahil/"></base>
       </head>
